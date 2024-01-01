@@ -27,6 +27,8 @@ pagination();
 const multiplier = (a, b, c, d) => {
   return a * b;
 };
+const value = multiplier(3, 2);
+console.log(value);
 
 // inline function
 // concept:reusability,using anynomous function which is used in global function
@@ -48,6 +50,7 @@ console.log(secret());
 // use case: used to get the secret environment variables used in the application
 
 // Implicit function
+
 const addit = (a, b) => a + b;
 const result = addit(2, 3);
 console.log(result);
@@ -68,3 +71,6 @@ console.log(output);
   console.log("I am IIFE");
 })(3, 4);
 // use: Scripts to add the dummy data inside the application during first run.
+(function diff(i, j) {
+  console.log(i - j);
+})(diff(3, 4));
